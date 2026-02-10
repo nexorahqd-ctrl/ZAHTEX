@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZAHTEX — Docs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">ZAHTEX</a>
+      <nav class="nav__links">
+        <a href="product.html">Product</a>
+        <a href="pricing.html">Pricing</a>
+        <a class="active" href="docs.html">Docs</a>
+        <a href="security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Docs</h1>
+        <p>Quickstart documentation for ZAHTEX.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="codeblock">
+          <pre><code>import zahtex
+
+zahtex.init(
+  api_key="YOUR_KEY",
+  device_id="ABC123"
+)</code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> ZAHTEX</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

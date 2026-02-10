@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZAHTEX — Security</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">ZAHTEX</a>
+      <nav class="nav__links">
+        <a href="product.html">Product</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="docs.html">Docs</a>
+        <a class="active" href="security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Security</h1>
+        <p>Security and privacy are built-in by default.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid2">
+        <div class="card">
+          <h3>Encryption</h3>
+          <p>All data is encrypted in transit using TLS.</p>
+        </div>
+        <div class="card">
+          <h3>Privacy-first</h3>
+          <p>No personal data collected by default.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> ZAHTEX</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

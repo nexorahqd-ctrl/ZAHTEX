@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZAHTEX — Observability for firmware devices</title>
+  <meta name="description" content="ZAHTEX is the observability layer for the physical world. Detect firmware crashes, analyze errors, and monitor device fleets in production." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">ZAHTEX</a>
+      <nav class="nav__links">
+        <a href="product.html">Product</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="docs.html">Docs</a>
+        <a href="security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1>Observability for firmware devices</h1>
+        <p>
+          ZAHTEX helps engineering teams detect crashes, analyze error trends,
+          and monitor firmware versions across device fleets in production.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="docs.html">Read docs</a>
+          <a class="btn btn--secondary" href="product.html">View product</a>
+        </div>
+
+        <div class="hero__meta">
+          Built for ESP32, STM32, and Linux-based devices.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__title">
+          <h2>Why ZAHTEX</h2>
+          <p>
+            When devices fail in the field, teams lose visibility.
+            ZAHTEX makes every device observable.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Crash analytics</h3>
+            <p>Automatically capture and group firmware crashes across fleets.</p>
+          </div>
+          <div class="card">
+            <h3>Error monitoring</h3>
+            <p>Track error codes, spikes, and regressions by firmware version.</p>
+          </div>
+          <div class="card">
+            <h3>Fleet health</h3>
+            <p>Understand device stability, availability, and impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> ZAHTEX</div>
+      <div class="muted">Observability for the physical world</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

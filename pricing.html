@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZAHTEX — Pricing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">ZAHTEX</a>
+      <nav class="nav__links">
+        <a href="product.html">Product</a>
+        <a class="active" href="pricing.html">Pricing</a>
+        <a href="docs.html">Docs</a>
+        <a href="security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Pricing</h1>
+        <p>Simple pricing that scales with your fleet.</p>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container pricing">
+        <div class="pricecard">
+          <h3>Free</h3>
+          <div class="price">€0</div>
+          <p>Up to 10 devices</p>
+        </div>
+        <div class="pricecard">
+          <h3>Pro</h3>
+          <div class="price">€199</div>
+          <p>Up to 500 devices</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> ZAHTEX</div>
+      <div class="muted">Contact: nexora.hqd@gmail.com</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
